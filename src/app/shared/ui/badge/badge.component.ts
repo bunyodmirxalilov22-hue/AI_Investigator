@@ -5,8 +5,8 @@ export type BadgeTone = 'neutral' | 'accent' | 'success' | 'warning' | 'danger';
 @Component({
   selector: 'ui-badge',
   standalone: true,
-  templateUrl: './badge.html',
-  styleUrl: './badge.scss',
+  templateUrl: './badge.component.html',
+ 
 })
 export class BadgeComponent {
   @Input() tone: BadgeTone = 'neutral';

@@ -1,0 +1,20 @@
+<div class="relative inline-flex items-center justify-center" [style.width.px]="dim" [style.height.px]="dim">
+  <svg [attr.width]="dim" [attr.height]="dim" viewBox="0 0 100 100" class="-rotate-90">
+    <circle cx="50" cy="50" r="42" fill="none" [attr.stroke]="trackColor" stroke-width="8" />
+    <circle
+      cx="50" cy="50" r="42" fill="none"
+      [attr.stroke]="strokeColor"
+      stroke-width="8"
+      stroke-linecap="round"
+      [attr.stroke-dasharray]="264"
+      [attr.stroke-dashoffset]="offset"
+      class="transition-all duration-700 ease-out"
+    />
+  </svg>
+  <div class="absolute flex flex-col items-center justify-center">
+    <span class="text-data leading-none" [style.font-size.px]="dim * 0.28" [style.color]="strokeColor">{{ value }}</span>
+    @if (showMax) {
+      <span class="text-caption leading-none mt-0.5" style="font-size: 10px;">/ 100</span>
+    }
+  </div>
+</div>
