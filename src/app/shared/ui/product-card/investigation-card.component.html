@@ -1,0 +1,13 @@
+<div class="surface-card flex items-center gap-4 p-4 transition-shadow hover:shadow-card-hover">
+  <img [src]="investigation.imageUrl" [alt]="investigation.productName" class="h-14 w-14 shrink-0 rounded-lg object-cover" />
+  <div class="min-w-0 flex-1">
+    <p class="truncate text-sm font-semibold text-[var(--text-primary)]">{{ investigation.productName }}</p>
+    <p class="text-caption">{{ investigation.brand }} · {{ investigation.category }}</p>
+    <p class="text-caption mt-0.5">{{ investigation.createdAt | date: 'MMM d' }}</p>
+  </div>
+  <div class="hidden text-right sm:block">
+    <p class="text-data text-sm">{{ investigation.price | number: '1.0-0' }} {{ investigation.currency }}</p>
+  </div>
+  <ui-recommendation-badge [recommendation]="investigation.recommendation" />
+  <ui-score [value]="investigation.aiScore" size="sm" [showMax]="false" />
+</div>
