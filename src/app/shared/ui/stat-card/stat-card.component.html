@@ -1,0 +1,11 @@
+<div class="surface-card p-5">
+  <div class="flex items-center justify-between">
+    <p class="text-caption">{{ label }}</p>
+    @if (trend) {
+      <span class="text-xs font-semibold" [class]="trend === 'up' ? 'text-success-500' : 'text-danger-500'">
+        {{ trend === 'up' ? '↑' : '↓' }} {{ trendValue }}
+      </span>
+    }
+  </div>
+  <p class="text-data mt-2 text-2xl text-[var(--text-primary)]">{{ value }}</p>
+</div>

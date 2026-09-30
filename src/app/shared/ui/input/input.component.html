@@ -1,0 +1,21 @@
+<label class="block">
+  @if (label) {
+    <span class="mb-1.5 block text-sm font-medium text-[var(--text-primary)]">{{ label }}</span>
+  }
+  <div class="relative">
+    @if (icon) {
+      <span class="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--text-tertiary)]" [innerHTML]="icon"></span>
+    }
+    <input
+      [type]="type"
+      [placeholder]="placeholder"
+      [value]="value"
+      (input)="onInput($event)"
+      (blur)="onTouched()"
+      [class]="inputClasses"
+    />
+  </div>
+  @if (error) {
+    <span class="mt-1.5 block text-xs text-danger-500">{{ error }}</span>
+  }
+</label>

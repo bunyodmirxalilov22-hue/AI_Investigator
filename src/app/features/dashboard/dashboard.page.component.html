@@ -1,0 +1,17 @@
+<div class="min-h-full bg-slate-50/60 dark:bg-slate-950">
+  <div class="mx-auto max-w-6xl space-y-8 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+    <!-- Welcome -->
+    <dashboard-welcome />
+    <!-- Main content -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <!-- Left -->
+      <div class="space-y-6">
+        <dashboard-stats [stats]="stats" />
+        <dashboard-insight />
+        <dashboard-recent [investigations]="recent" />
+      </div>
+      <!-- Right -->
+      <dashboard-quick-action />
+    </div>
+  </div>
+</div>
