@@ -6,8 +6,7 @@ import { EmptyStateComponent } from '../ui/empty-state/empty-state.component';
   selector: 'app-coming-soon',
   standalone: true,
   imports: [EmptyStateComponent],
-  templateUrl: './coming-soon.html',
-  styleUrl: './coming-soon.scss',
+  templateUrl: './coming-soon.component.html'
 })
 export class ComingSoonComponent {
   @Input() title = 'This page';

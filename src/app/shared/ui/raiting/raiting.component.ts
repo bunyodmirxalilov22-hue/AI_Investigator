@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'ui-rating',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './rating..component.html'
+  templateUrl: './raiting.component.html'
 })
 export class RatingComponent {
   @Input({ required: true }) value!: number;

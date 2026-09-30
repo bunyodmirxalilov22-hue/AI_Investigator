@@ -1,0 +1,190 @@
+<section
+  id="demo"
+  class="border-b border-slate-200/70 py-24 sm:py-28 dark:border-white/[0.06]"
+>
+  <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+    <!-- Section header -->
+    <div class="grid gap-14 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
+
+      <div>
+        <span
+          class="text-sm font-semibold uppercase tracking-[0.16em] text-blue-600 dark:text-blue-400"
+        >
+          How Investigator thinks
+        </span>
+
+        <h2
+          class="mt-4 text-3xl font-semibold tracking-[-0.04em] text-slate-950 sm:text-4xl dark:text-white"
+        >
+          Real research.
+
+          <span class="text-slate-400 dark:text-slate-500">
+            Not just a lookup.
+          </span>
+        </h2>
+
+        <p
+          class="mt-5 max-w-md text-xl leading-7 text-slate-600 dark:text-slate-400"
+        >
+          Instead of showing you another search result, Investigator combines
+          multiple signals and turns them into a decision you can actually use.
+        </p>
+      </div>
+
+
+      <!-- Process card -->
+      <div
+        class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/[0.08] dark:bg-slate-900"
+      >
+
+        <div class="grid lg:grid-cols-[270px_1fr]">
+
+          <!-- Steps -->
+          <div
+            class="border-b border-slate-200 p-5 lg:border-b-0 lg:border-r dark:border-white/[0.07]"
+          >
+
+            @for (step of steps; track step.label; let i = $index) {
+
+              <div
+                class="flex gap-3 rounded-xl px-3 py-3 transition-colors"
+                [ngClass]="{
+                  'bg-slate-50 dark:bg-white/[0.04]': i === activeIndex()
+                }"
+              >
+
+                <!-- Step number -->
+                <div
+                  class="grid h-6 w-6 shrink-0 place-items-center rounded-full text-[10px] font-bold"
+                  [ngClass]="{
+                    'bg-emerald-500 text-white': i < activeIndex(),
+
+                    'bg-blue-600 text-white': i === activeIndex(),
+
+                    'border border-slate-200 text-slate-400 dark:border-white/10':
+                      i > activeIndex()
+                  }"
+                >
+
+                  @if (i < activeIndex()) {
+
+                    <span>✓</span>
+
+                  } @else {
+
+                    <span>{{ i + 1 }}</span>
+
+                  }
+
+                </div>
+
+
+                <!-- Step content -->
+                <div class="min-w-0">
+
+                  <p
+                    class="text-[13px] font-semibold"
+                    [ngClass]="{
+                      'text-slate-400': i > activeIndex(),
+
+                      'text-slate-900 dark:text-white':
+                        i <= activeIndex()
+                    }"
+                  >
+                    {{ step.label }}
+                  </p>
+
+
+                  @if (i === activeIndex()) {
+
+                    <p
+                      class="mt-1 text-[11px] leading-4 text-slate-500 dark:text-slate-400"
+                    >
+                      {{ step.detail }}
+                    </p>
+
+                  }
+
+                </div>
+
+              </div>
+
+            }
+
+          </div>
+
+
+          <!-- Current stage -->
+          <div
+            class="flex min-h-[300px] flex-col justify-between p-7 sm:p-9"
+          >
+
+            <div>
+
+              <p
+                class="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400"
+              >
+                Currently analyzing
+              </p>
+
+
+              <h3
+                class="mt-3 text-xl font-semibold tracking-tight text-slate-950 dark:text-white"
+              >
+                Sony WH-1000XM5
+              </h3>
+
+
+              <p
+                class="mt-2 max-w-lg text-sm leading-6 text-slate-500 dark:text-slate-400"
+              >
+                {{ steps[activeIndex()].detail }}
+              </p>
+
+            </div>
+
+
+            <!-- Progress -->
+            <div class="mt-12">
+
+              <div
+                class="flex justify-between text-[11px] text-slate-500 dark:text-slate-400"
+              >
+
+                <span>
+                  Stage {{ activeIndex() + 1 }} of {{ steps.length }}
+                </span>
+
+                <span
+                  class="font-semibold text-slate-900 dark:text-white"
+                >
+                  {{ progressPct() }}%
+                </span>
+
+              </div>
+
+
+              <div
+                class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/[0.06]"
+              >
+
+                <div
+                  class="h-full rounded-full bg-blue-600 transition-all duration-500"
+                  [style.width.%]="progressPct()"
+                ></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

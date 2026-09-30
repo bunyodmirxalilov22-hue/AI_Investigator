@@ -1,0 +1,593 @@
+
+<div class="min-h-screen bg-white dark:bg-slate-950">
+
+  <div class="grid min-h-screen lg:grid-cols-[1.05fr_0.95fr]">
+
+    <div
+      class="relative hidden overflow-hidden bg-slate-950 lg:flex lg:items-center lg:justify-center"
+    >
+
+      <!-- Background glow -->
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(37,99,235,0.18),transparent_35%),radial-gradient(circle_at_80%_80%,rgba(99,102,241,0.14),transparent_35%)]"
+      ></div>
+
+      <div class="relative w-full max-w-xl px-10 py-16">
+
+        <!-- Logo -->
+        <a
+          routerLink="/"
+          class="mb-14 flex w-fit items-center gap-2"
+        >
+          <img
+            src="assets/logo-mark.png"
+            alt="Investigator"
+            class="h-7 w-7 object-contain"
+          />
+
+          <span
+            class="text-sm font-semibold tracking-tight text-white"
+          >
+            Investigator
+          </span>
+        </a>
+
+
+        <!-- Hero copy -->
+        <div class="mb-10 max-w-md">
+
+          <div
+            class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[10px] font-medium uppercase tracking-[0.12em] text-slate-400"
+          >
+            <span
+              class="h-1.5 w-1.5 rounded-full bg-emerald-400"
+            ></span>
+
+            AI product intelligence
+          </div>
+
+
+          <h2
+            class="text-4xl font-semibold leading-[1.08] tracking-[-0.035em] text-white"
+          >
+            Know what you're buying
+            <span class="text-slate-500">
+              before you buy it.
+            </span>
+          </h2>
+
+
+          <p
+            class="mt-5 max-w-sm text-sm leading-6 text-slate-400"
+          >
+            Investigator analyzes reviews, pricing, sellers and
+            product signals so you can make better decisions in seconds.
+          </p>
+
+        </div>
+
+
+        <div
+          class="overflow-hidden rounded-2xl border border-white/[0.09] bg-white/[0.045] shadow-2xl shadow-black/30 backdrop-blur-xl"
+        >
+
+          <!-- Card header -->
+          <div
+            class="flex items-center justify-between border-b border-white/[0.07] px-5 py-4"
+          >
+
+            <div class="flex items-center gap-2">
+
+              <span
+                class="h-2 w-2 rounded-full bg-emerald-400"
+              ></span>
+
+              <span
+                class="text-xs font-medium text-slate-300"
+              >
+                Investigation complete
+              </span>
+
+            </div>
+
+            <span class="text-[10px] text-slate-500">
+              42 sec
+            </span>
+
+          </div>
+
+
+          <!-- Card content -->
+          <div class="p-5">
+
+            <!-- Product -->
+            <div class="flex items-start justify-between gap-5">
+
+              <div>
+
+                <p
+                  class="text-[9px] font-medium uppercase tracking-[0.15em] text-slate-500"
+                >
+                  Product
+                </p>
+
+                <h3
+                  class="mt-2 text-sm font-semibold text-white"
+                >
+                  Sony WH-1000XM5
+                </h3>
+
+                <p
+                  class="mt-1 text-xs text-slate-500"
+                >
+                  Wireless noise cancelling headphones
+                </p>
+
+              </div>
+
+
+              <!-- Score -->
+              <div
+                class="flex h-14 w-14 shrink-0 flex-col items-center justify-center rounded-xl border border-emerald-400/20 bg-emerald-400/10"
+              >
+
+                <span
+                  class="text-lg font-bold text-emerald-400"
+                >
+                  87
+                </span>
+
+                <span
+                  class="text-[8px] uppercase tracking-wider text-emerald-400/70"
+                >
+                  Score
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Findings -->
+            <div class="mt-6 space-y-3">
+
+              <!-- Review -->
+              <div
+                class="flex items-center justify-between rounded-xl bg-white/[0.035] px-4 py-3"
+              >
+
+                <div class="flex items-center gap-3">
+
+                  <span
+                    class="grid h-7 w-7 place-items-center rounded-lg bg-emerald-400/10 text-xs text-emerald-400"
+                  >
+                    ✓
+                  </span>
+
+                  <span class="text-xs text-slate-300">
+                    Review quality
+                  </span>
+
+                </div>
+
+                <span
+                  class="text-xs font-semibold text-emerald-400"
+                >
+                  Strong
+                </span>
+
+              </div>
+
+
+              <!-- Price -->
+              <div
+                class="flex items-center justify-between rounded-xl bg-white/[0.035] px-4 py-3"
+              >
+
+                <div class="flex items-center gap-3">
+
+                  <span
+                    class="grid h-7 w-7 place-items-center rounded-lg bg-blue-400/10 text-xs text-blue-400"
+                  >
+                    $
+                  </span>
+
+                  <span class="text-xs text-slate-300">
+                    Price vs market
+                  </span>
+
+                </div>
+
+                <span
+                  class="text-xs font-semibold text-blue-400"
+                >
+                  -7.7%
+                </span>
+
+              </div>
+
+
+              <!-- Seller -->
+              <div
+                class="flex items-center justify-between rounded-xl bg-white/[0.035] px-4 py-3"
+              >
+
+                <div class="flex items-center gap-3">
+
+                  <span
+                    class="grid h-7 w-7 place-items-center rounded-lg bg-amber-400/10 text-xs text-amber-400"
+                  >
+                    !
+                  </span>
+
+                  <span class="text-xs text-slate-300">
+                    Seller risk
+                  </span>
+
+                </div>
+
+                <span
+                  class="text-xs font-semibold text-amber-400"
+                >
+                  Low
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Recommendation -->
+            <div
+              class="mt-4 flex items-center justify-between rounded-xl border border-emerald-400/10 bg-emerald-400/[0.06] px-4 py-3"
+            >
+
+              <div>
+
+                <p
+                  class="text-[9px] uppercase tracking-[0.15em] text-emerald-400/60"
+                >
+                  Recommendation
+                </p>
+
+                <p
+                  class="mt-1 text-xs font-semibold text-emerald-400"
+                >
+                  Good purchase
+                </p>
+
+              </div>
+
+              <span class="text-lg text-emerald-400">
+                →
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Trust -->
+        <div
+          class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-[10px] text-slate-500"
+        >
+          <span>240k+ investigations</span>
+          <span>4.8/5 user rating</span>
+          <span>No sponsored rankings</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="flex min-h-screen items-center justify-center px-6 py-12 sm:px-10"
+    >
+
+      <div class="w-full max-w-[400px]">
+
+        <!-- Mobile logo -->
+        <a
+          routerLink="/"
+          class="mb-12 flex w-fit items-center gap-2 lg:hidden"
+        >
+
+          <img
+            src="assets/logo-mark.png"
+            alt="Investigator"
+            class="h-7 w-7 object-contain"
+          />
+
+          <span
+            class="text-sm font-semibold tracking-tight text-slate-950 dark:text-white"
+          >
+            Investigator
+          </span>
+
+        </a>
+
+
+        <!-- Heading -->
+        <div class="mb-8">
+
+          <h1
+            class="text-[30px] font-semibold leading-tight tracking-[-0.035em] text-slate-950 dark:text-white"
+          >
+            Create your account
+          </h1>
+
+          <p
+            class="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400"
+          >
+            Get your first product investigation in seconds.
+          </p>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="flex h-12 w-full items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white text-sm font-medium text-slate-700 shadow-sm transition-all duration-200 hover:border-slate-300 hover:bg-slate-50 active:scale-[0.99] dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-slate-200 dark:hover:border-white/[0.14] dark:hover:bg-white/[0.055]"
+        >
+
+          <svg
+            class="h-[18px] w-[18px]"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M21.35 12.23c0-.79-.07-1.55-.2-2.28H12v4.31h5.24a4.48 4.48 0 0 1-1.94 2.94v2.44h3.14c1.84-1.69 2.91-4.18 2.91-7.41Z"
+              fill="#4285F4"
+            />
+
+            <path
+              d="M12 21.9c2.63 0 4.84-.87 6.45-2.36l-3.14-2.44c-.87.58-1.98.93-3.31.93-2.55 0-4.71-1.72-5.49-4.03H3.27v2.52A9.75 9.75 0 0 0 12 21.9Z"
+              fill="#34A853"
+            />
+
+            <path
+              d="M6.51 14c-.2-.58-.31-1.2-.31-1.84s.11-1.26.31-1.84V7.8H3.27A9.74 9.74 0 0 0 2.25 12c0 1.52.36 2.95 1.02 4.2L6.51 14Z"
+              fill="#FBBC05"
+            />
+
+            <path
+              d="M12 6.29c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.83 3.4 14.63 2.1 12 2.1a9.75 9.75 0 0 0-8.73 5.7L6.51 10.3C7.29 7.99 9.45 6.29 12 6.29Z"
+              fill="#EA4335"
+            />
+          </svg>
+
+          Continue with Google
+
+        </button>
+
+
+        <!-- Divider -->
+        <div class="my-7 flex items-center gap-4">
+
+          <div
+            class="h-px flex-1 bg-slate-200 dark:bg-white/[0.08]"
+          ></div>
+
+          <span
+            class="text-[10px] font-medium uppercase tracking-[0.14em] text-slate-400"
+          >
+            or
+          </span>
+
+          <div
+            class="h-px flex-1 bg-slate-200 dark:bg-white/[0.08]"
+          ></div>
+
+        </div>
+
+        <form
+          [formGroup]="form"
+          (ngSubmit)="submit()"
+          class="space-y-5"
+        >
+
+          <!-- Names -->
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+
+            <!-- First name -->
+            <div>
+
+              <label
+                class="mb-2 block text-[12px] font-medium text-slate-700 dark:text-slate-300"
+              >
+                First name
+              </label>
+
+              <input
+                type="text"
+                placeholder="Alex"
+                formControlName="firstName"
+                autocomplete="given-name"
+                class="h-11 w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-white dark:placeholder:text-slate-500 dark:hover:border-white/[0.15] dark:focus:border-blue-500 dark:focus:bg-white/[0.05]"
+              />
+
+              @if (submitted && form.controls.firstName.invalid) {
+                <p class="mt-1.5 text-[11px] text-red-500">
+                  Required
+                </p>
+              }
+
+            </div>
+
+
+            <!-- Last name -->
+            <div>
+
+              <label
+                class="mb-2 block text-[12px] font-medium text-slate-700 dark:text-slate-300"
+              >
+                Last name
+              </label>
+
+              <input
+                type="text"
+                placeholder="Morgan"
+                formControlName="lastName"
+                autocomplete="family-name"
+                class="h-11 w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-white dark:placeholder:text-slate-500 dark:hover:border-white/[0.15] dark:focus:border-blue-500 dark:focus:bg-white/[0.05]"
+              />
+
+              @if (submitted && form.controls.lastName.invalid) {
+                <p class="mt-1.5 text-[11px] text-red-500">
+                  Required
+                </p>
+              }
+
+            </div>
+
+          </div>
+
+
+          <!-- Email -->
+          <div>
+
+            <label
+              class="mb-2 block text-[12px] font-medium text-slate-700 dark:text-slate-300"
+            >
+              Email
+            </label>
+
+            <input
+              type="email"
+              placeholder="you@example.com"
+              formControlName="email"
+              autocomplete="email"
+              class="h-11 w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-white dark:placeholder:text-slate-500 dark:hover:border-white/[0.15] dark:focus:border-blue-500 dark:focus:bg-white/[0.05]"
+            />
+
+            @if (submitted && form.controls.email.invalid) {
+              <p class="mt-1.5 text-[11px] text-red-500">
+                Enter a valid email address
+              </p>
+            }
+
+          </div>
+
+
+          <!-- Password -->
+          <div>
+
+            <div class="mb-2 flex items-center justify-between">
+
+              <label
+                class="block text-[12px] font-medium text-slate-700 dark:text-slate-300"
+              >
+                Password
+              </label>
+
+              <span
+                class="text-[10px] text-slate-400 dark:text-slate-500"
+              >
+                8+ characters
+              </span>
+
+            </div>
+
+            <input
+              type="password"
+              placeholder="Create a password"
+              formControlName="password"
+              autocomplete="new-password"
+              class="h-11 w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-white dark:placeholder:text-slate-500 dark:hover:border-white/[0.15] dark:focus:border-blue-500 dark:focus:bg-white/[0.05]"
+            />
+
+            @if (submitted && form.controls.password.invalid) {
+              <p class="mt-1.5 text-[11px] text-red-500">
+                At least 8 characters
+              </p>
+            }
+
+          </div>
+
+
+          <!-- Confirm password -->
+          <div>
+
+            <label
+              class="mb-2 block text-[12px] font-medium text-slate-700 dark:text-slate-300"
+            >
+              Confirm password
+            </label>
+
+            <input
+              type="password"
+              placeholder="Repeat your password"
+              formControlName="confirmPassword"
+              autocomplete="new-password"
+              class="h-11 w-full rounded-xl border border-slate-200 bg-slate-50/60 px-3.5 text-sm text-slate-900 outline-none transition-all placeholder:text-slate-400 hover:border-slate-300 focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 dark:border-white/[0.09] dark:bg-white/[0.03] dark:text-white dark:placeholder:text-slate-500 dark:hover:border-white/[0.15] dark:focus:border-blue-500 dark:focus:bg-white/[0.05]"
+            />
+
+            @if (submitted && form.errors?.['mismatch']) {
+              <p class="mt-1.5 text-[11px] text-red-500">
+                Passwords do not match
+              </p>
+            }
+
+          </div>
+
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="mt-2 flex h-12 w-full items-center justify-center rounded-xl bg-slate-950 text-sm font-semibold text-white shadow-lg shadow-slate-950/10 transition-all duration-200 hover:bg-slate-800 active:scale-[0.99] dark:bg-white dark:text-slate-950 dark:hover:bg-slate-100"
+          >
+            Create account
+          </button>
+
+        </form>
+
+
+        <!-- Terms -->
+        <p
+          class="mt-5 text-center text-[11px] leading-5 text-slate-400 dark:text-slate-500"
+        >
+          By creating an account, you agree to our
+
+          <a
+            href="#"
+            class="font-medium text-slate-600 underline underline-offset-2 transition-colors hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+          >
+            Terms
+          </a>
+
+          and
+
+          <a
+            href="#"
+            class="font-medium text-slate-600 underline underline-offset-2 transition-colors hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
+          >
+            Privacy Policy
+          </a>.
+        </p>
+
+
+        <!-- Login -->
+        <p
+          class="mt-7 text-center text-[13px] text-slate-500 dark:text-slate-400"
+        >
+          Already have an account?
+
+          <a
+            routerLink="/auth/login"
+            class="ml-1 font-semibold text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+          >
+            Log in
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
